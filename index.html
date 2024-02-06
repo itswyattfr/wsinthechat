@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WyattProds</title>
+      <link rel="stylesheet" href="./assets/main/main.css">
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Socials</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+      <div class="animation start-home"></div>
+    </nav>
+    <div class="container">
+        <h1>Hey! Im Wyatt, I do <span class="auto-type"></span>.</h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+        "Photography", 
+        "Web Design", 
+        "Videography", 
+        "Photo Editing", 
+        "Programming",
+        "Art Design",
+        "Content Creation"
+      ],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true,
+      })
+    </script>
+    <script src="./assets/main/main.js"></script>
+  </body>
+</html>
