@@ -1,41 +1,357 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+   <head>
       <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>WyattProds</title>
-      <link rel="stylesheet" href="./assets/main/main.css">
-  </head>
-  <body class="body1">
-    <nav>
-      <a href="#">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./socials.html">Socials</a>
-      <a href="./portfolio.html">Portfolio</a>
-      <a href="./contact.html">Contact</a>
-      <div class="animation start-home"></div>
-    </nav>
-    <div class="container">
-        <h1>Hey! Im Wyatt, I do <span class="auto-type"></span>.</h1>
-    </div>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed(".auto-type", {
+      <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+      <link rel="stylesheet" href="/assets/src/css/main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <main>
+         <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+               <figure class="avatar-box">
+                  <img src="./assets/images/IMG_0361-modified.png" alt="Richard hanrick" width="80">
+               </figure>
+               <div class="info-content">
+                  <h1 class="name" title="Wyatt Gowing">Wyatt Gowing</h1>
+                  <p class="title">Photographer</p>
+               </div>
+               <button class="info_more-btn" data-sidebar-btn>
+                  <span>Show Contacts</span>
+                  <ion-icon name="chevron-down"></ion-icon>
+               </button>
+            </div>
+            <div class="sidebar-info_more">
+               <div class="separator"></div>
+               <ul class="contacts-list">
+                  <li class="contact-item">
+                     <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                     </div>
+                     <div class="contact-info">
+                        <p class="contact-title">Email</p>
+                        <a href="mailto:itswyattfr@gmail.com" class="contact-link">itswyattfr@gmail.com</a>
+                     </div>
+                  </li>
+                  <li class="contact-item">
+                     <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                     </div>
+                     <div class="contact-info">
+                        <p class="contact-title">Phone</p>
+                        <a href="tel:+12133522795" class="contact-link">+1 (705) 471 5525</a>
+                     </div>
+                  </li>
+                  <li class="contact-item">
+                     <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                     </div>
+                     <div class="contact-info">
+                        <p class="contact-title">Location</p>
+                        <address>North Bay, Ontario Canada</address>
+                     </div>
+                  </li>
+               </ul>
+               <div class="separator"></div>
+               <ul class="social-list">
+                  <li class="social-item">
+                     <a href="https://github.com/itswyattfr" class="social-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                     </a>
+                  </li>
+                  <li class="social-item">
+                     <a href="https://www.tiktok.com/@itswyattfr" class="social-link">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                     </a>
+                  </li>
+                  <li class="social-item">
+                     <a href="https://www.youtube.com/channel/UCRjDASd_jfki-7N5ByPr8Vw" class="social-link">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </aside>
+         <div class="main-content">
+            <nav class="navbar">
+               <ul class="navbar-list">
+                  <li class="navbar-item">
+                     <button class="navbar-link  active" data-nav-link>About</button>
+                  </li>
+                  <li class="navbar-item">
+                     <button class="navbar-link" data-nav-link>Resume</button>
+                  </li>
+                  <li class="navbar-item">
+                     <button class="navbar-link" data-nav-link>Portfolio</button>
+                  </li>
+                  <li class="navbar-item">
+                     <button class="navbar-link" data-nav-link>Blog</button>
+                  </li>
+                  <li class="navbar-item">
+                     <button class="navbar-link" data-nav-link>Contact</button>
+                  </li>
+               </ul>
+            </nav>
+            <article class="about  active" data-page="about">
+               <header>
+                  <h2 class="h2 article-title">About me</h2>
+               </header>
+               <section class="about-text">
+                  <p>
+                    Im 14 Years Old From Ontario, I love to do photography and editing. I have been practicing my photography for around about 3 years, I have always enjoyed it but have never had the oppurtunity to pursue my passion.
+                  </p>
+                  <p>
+                     I also like to do web development and coding in languages such as HTML, PHP, Python, Javascript and Lua. Im hoping with this portfolio I can secure my future in photography. Content creation is another passion of mine,  have tried for years and have never succeeded but I think if i post quality content consitently I will be able to grow my socials and my following.
+                  </p>
+               </section>
+               <section class="service">
+                  <h3 class="h3 service-title">My Specialties</h3>
+                  <ul class="service-list">
+                     <li class="service-item">
+                        
+                        <div class="service-content-box">
+                           <h4 class="h4 service-item-title">Photography</h4>
+                           <p class="service-item-text">
+                              The most modern and high-quality design made at a professional level.
+                           </p>
+                        </div>
+                     </li>
+                     <li class="service-item">
+                        <div class="service-content-box">
+                           <h4 class="h4 service-item-title">Web development</h4>
+                           <p class="service-item-text">
+                              I have spent 6 years learning how to build websites in HTML and Other languages.
+                           </p>
+                        </div>
+                     </li>
+                     <li class="service-item">
+                       
+                        <div class="service-content-box">
+                           <h4 class="h4 service-item-title">Video/Photo Editing</h4>
+                           <p class="service-item-text">
+                              I am semi-experienced in editing with programs such as Photoshop and Premiere Pro/After Effects.
+                           </p>
+                        </div>
+                     </li>
+                     <li class="service-item">
+                        <div class="service-content-box">
+                           <h4 class="h4 service-item-title">Content Creation</h4>
+                           <p class="service-item-text">
+                              I post regularly on my socials, mostly tiktok however.
+                           </p>
+                        </div>
+                     </li>
+                  </ul>
+                </section>
+            </article>
+            <article class="resume" data-page="resume">
+               <header>
+                  <h2 class="h2 article-title">Resume</h2>
+               </header>
+               <section class="timeline">
+                  <div class="title-wrapper">
+                     <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                     </div>
+                     <h3 class="h3">Education</h3>
+                  </div>
+                  <ol class="timeline-list">
+                      <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">High School Student</h4>
+                        <span>2023-2027</span>
+                        <p class="timeline-text">
+                           Joined Media Arts Team and I am planning on taking this course for years to come, as well as get advice and tricks from professionals.
+                        </p>
+                     </li>
+                  </ol>
+                  <div class="title-wrapper">
+                    <div class="icon-box">
+                       <ion-icon name="hourglass-outline"></ion-icon>
+                    </div>
+                    <h3 class="h3">Experience</h3>
+                 </div>
+                 <ol class="timeline-list">
+                  <li class="timeline-item">
+                    <h4 class="h4 timeline-item-title">Web Development</h4>
+                    <span>2018-2024+</span>
+                    <p class="timeline-text">
+                       Ive been practicing for years on how to make websites, mostly on my own but ive had support from friends and YouTube.
+                    </p>
+                 </li>
+              </ol>
+               </section>
+               <section class="skill">
+                  <h3 class="h3 skills-title">My skills</h3>
+                  <ul class="skills-list content-card">
+                     <li class="skills-item">
+                        <div class="title-wrapper">
+                           <h5 class="h5">Web design</h5>
+                           <data value="80">80%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                           <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+                     </li>
+                     <li class="skills-item">
+                        <div class="title-wrapper">
+                           <h5 class="h5">Graphic design</h5>
+                           <data value="55">55%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                           <div class="skill-progress-fill" style="width: 55%;"></div>
+                        </div>
+                     </li>
+                     <li class="skills-item">
+                        <div class="title-wrapper">
+                           <h5 class="h5">Photography/Videography</h5>
+                           <data value="58">58%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                           <div class="skill-progress-fill" style="width: 58%;"></div>
+                        </div>
+                     </li>
+                     <li class="skills-item">
+                        <div class="title-wrapper">
+                           <h5 class="h5">Media Editing</h5>
+                           <data value="75">65%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                           <div class="skill-progress-fill" style="width: 65%;"></div>
+                        </div>
+                     </li>
+                  </ul>
+              
+               </section>
+            </article>
+            <article class="portfolio" data-page="portfolio">
+              
+               <header>
+                  <h2 class="h2 article-title">Portfolio</h2>
+               </header>
+               <section class="projects">
+                  <ul class="filter-list">
+                     <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                     </li>
+                     <li class="filter-item">
+                        <button data-filter-btn>Photos</button>
+                     </li>
+                     <li class="filter-item">
+                        <button data-filter-btn>Videos</button>
+                     </li>
+                     <li class="filter-item">
+                        <button data-filter-btn>Misc</button>
+                     </li>
+                  </ul>
+                  <div class="filter-select-box">
+                     <button class="filter-select" data-select>
+                        <div class="select-value" data-selecct-value>Select category</div>
+                        <div class="select-icon">
+                           <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+                     </button>
+                     <ul class="select-list">
+                        <li class="select-item">
+                           <button data-select-item>All</button>
+                        </li>
+                        <li class="select-item">
+                           <button data-select-item>Web design</button>
+                        </li>
+                        <li class="select-item">
+                           <button data-select-item>Applications</button>
+                        </li>
+                        <li class="select-item">
+                           <button data-select-item>Web evelopment</button>
+                        </li>
+                     </ul>
+                  </div>
+                  <ul class="project-list">
+                     <li class="project-item  active" data-filter-item data-category="misc">
+                        <a href="#">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/Screenshot 2024-02-07 200211.png" alt="Portfolio" loading="lazy">
+                           </figure>
+                           <h3 class="project-title">Portfolio</h3>
+                           <p class="project-category">Misc</p>
+                        </a>
+                     </li>
+                  </ul>
+               </section>
+            </article>
+            <article class="blog" data-page="blog">
+               <header>
+                  <h2 class="h2 article-title">Blog</h2>
+               </header>
+               <section class="blog-posts">
+                  <ul class="blog-posts-list">
+                     <li class="blog-post-item">
+                        <a href="#">
+                           <figure class="blog-banner-box">
+                              <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                           </figure>
+                           <div class="blog-content">
+                              <div class="blog-meta">
+                                 <p class="blog-category">Misc</p>
+                                 <span class="dot"></span>
+                                 <time datetime="2022-02-23">Feb 7th, 2024</time>
+                              </div>
+                              <h3 class="h3 blog-item-title">First Blog!!!!!</h3>
+                              <p class="blog-text">
+                                 I dont even know why I made this
+                              </p>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </section>
+            </article>
+            <article class="contact" data-page="contact">
+               <header>
+                  <h2 class="h2 article-title">Contact</h2>
+               </header>
+               <section class="contact-form">
+                  <h3 class="h3 form-title">Contact Form</h3>
+                  <form action="https://formspree.io/f/xgeganwv" method="post" class="form" data-form>
+                     <div class="input-wrapper">
+                        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                     </div>
+                     <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                     <button class="form-btn" type="submit" disabled data-form-btn>
+                        <ion-icon name="paper-plane"></ion-icon>
+                        <span>Send Message</span>
+                     </button>
+                  </form>
+               </section>
+            </article>
+         </div>
+      </main>
+      <script src="./assets/src/js/main.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
         strings: [
-        "Photography", 
-        "Web Design", 
-        "Videography", 
-        "Photo Editing", 
-        "Programming",
-        "Art Design",
-        "Content Creation"
-      ],
+        "Web Developer",
+        "Photographer",
+        "Videographer",
+        "Content Creator",
+        "Video Editor",
+        "Photo Editor",
+        ],
         typeSpeed: 100,
         backSpeed: 100,
-        backDelay: 1000,
-        loop: true,
-      })
-    </script>
-    <script src="./assets/main/main.js"></script>
-  </body>
+        })
+      </script>
+   </body>
 </html>
